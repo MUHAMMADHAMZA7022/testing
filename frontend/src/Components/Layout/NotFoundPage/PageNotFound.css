@@ -1,0 +1,37 @@
+.pageNotFound{
+    padding: 150px 20px;
+    text-align: center;
+}
+.pageNotFound h1{
+    font-size: 5rem;
+    line-height: normal;
+    color: var(--redColor);
+    margin-bottom: 20px;
+}
+.pageNotFound h2{
+    font-size: 2rem;
+    line-height: normal;
+    color: var(--themeColor);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pageNotFound h3{
+    font-size: 1rem;
+    line-height: normal;
+    color: var(--lightColor);
+    margin-bottom: 20px;
+}
+.pageNotFound a{
+    font-size: 1rem;
+    line-height: normal;
+    color: var(--whiteColor);
+    margin-bottom: 20px;
+    background: var(--redColor);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.pageNotFound a:focus,
+.pageNotFound a:hover{
+    background: var(--themeColor);
+}

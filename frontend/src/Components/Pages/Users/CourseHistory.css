@@ -1,0 +1,16 @@
+.joined_courses{
+    padding: 50px 25px;
+}
+.joined_courses .course_card {
+    float: left;
+    padding: 5px;
+    margin: 0 10px 10px 0;
+    width: calc(50% - 20px);
+    height: 200px;
+    position: relative;
+}
+.joined_courses .course_card .crs_action{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}

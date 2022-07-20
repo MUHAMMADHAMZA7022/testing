@@ -1,0 +1,70 @@
+.profileContainer {
+  width: 100%;
+  /* background-color: var(--lightColor); */
+  overflow: hidden;
+  padding: 50px 50px;
+}
+.proCont{
+  box-shadow: var(--boxShadow);
+}
+.homeHeading{
+  text-align: center;
+}
+.proCont .profC_holder{
+  display: inline-block;
+  padding: 20px;
+  overflow: hidden;
+}
+.proCont .profC_holder h4 {
+  color: var(--redColor);
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+.proCont .profC_holder p {
+  color: var(--greenColor);
+  font-weight: 600;
+  
+}
+.proCont div > a.btn_primary{
+  float: none;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.proCont div > button.btn_primary{
+  width: 100%;
+}
+.proCont > div:last-child > div:last-child > a{
+  margin-bottom: 20px;
+}
+/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+}
+@media screen and (max-width: 599px) {
+  .homeHeading{
+    padding: 10px;
+    margin: 0;
+  }
+  .homeHeading h2{
+    font-size: 20px;
+    line-height: normal;
+  }
+  .profileContainer {
+    padding: 20px;
+  }
+  .proCont{
+    padding: 20px;
+  }
+  .proCont .profC_holder{
+    padding: 10px;
+  }
+  .proCont .profC_holder h4{
+    font-size: 14px;
+  }
+  .proCont .profC_holder p {
+    font-size: 12px;
+  }
+}

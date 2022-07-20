@@ -1,0 +1,320 @@
+.dashboard_holder{
+    overflow: hidden;
+}
+.dSidebar{
+    width: 20%;
+    float: left;
+}
+.dashboard_content{
+    width: 80%;
+    float: right;
+    padding: 50px;
+}
+.dashboardContent_holder{
+    padding: 20px;
+    box-shadow: var(--boxShadow);
+    display: flex;
+}
+.dashboardContent_holder .dasCard{
+    width: 25%;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: var(--boxShadow);
+    text-align: center;
+    flex: 1;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dashboardContent_holder .dasCard .lnk_boxDsh{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--themeColor);
+    max-height: 40px;
+}
+.dashboardContent_holder .dasCard .lnk_boxDsh:hover,
+.dashboardContent_holder .dasCard .lnk_boxDsh:focus{
+    background: var(--greenColor);
+}
+.dashboardContent_holder .dasCard h3,
+.dashboardContent_holder .dasCard span,
+.dashboardContent_holder .dasCard .lnk_boxDsh a{
+    display: block;
+    margin-bottom: 20px;
+}
+.dashboardContent_holder .dasCard h3{
+    color: var(--themeColor);
+    font-size: 20px;
+    line-height: normal;
+}
+.dashboardContent_holder .dasCard span{
+    color: var(--redColor);
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.dashboardContent_holder .dasCard .lnk_boxDsh a{
+    color: var(--whiteColor);
+    font-size: 16px;
+    padding: 10px;
+    line-height: normal;
+}
+.dashboardContent_holder .dasCard .lnk_boxDsh:hover a{
+    color: var(--whiteColor);
+}
+.dashboard_content h1{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.dashboard_sidebar{
+    padding: 10px 0px;
+    border-right: 1px solid var(--themeColor);
+    background-color: var(--whiteColor);
+    height: 100vh;
+    box-shadow: var(--boxShadow);
+}
+.dLogo{
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 800;
+}
+.dList ul li span,
+.dList ul li a{
+    display: block;
+    padding: 5px 10px;
+    background-color: var(--whiteColor);
+    color: var(--themeColor);
+    border-bottom: 1px solid rgba(0, 46, 59, 0.29);
+}
+.dList ul li span:focus,
+.dList ul li span:hover,
+.dList ul li a:focus,
+.dList ul li a:hover{
+    background-color: var(--themeColor);
+    color: var(--whiteColor);
+}
+.dashboard .dList ul li a.dshActive,
+.courses .dList ul li span.crsActive,
+.courses .dList ul li a.crsActive,
+.students .dList ul li a.stdActive,
+.seminars .dList ul li a.semActive,
+.events .dList ul li a.evnActive{
+    background-color: var(--themeColor);
+    color: var(--whiteColor);
+}
+
+/* COURSES STYLES */
+.courses_content{
+    padding: 10px;
+}
+.courses_content h1{
+    color: var(--themeColor);
+    margin-bottom: 20px;
+}
+/* 
+.courseForm textarea,
+.courseForm input{
+    width: 100%;
+    box-shadow: var(--boxShadow);
+    outline: none;
+    text-shadow: none;
+    border: none;
+    padding: 10px 2px 10px 5px;
+    font-size: 14px;
+    color: var(--themeColor);
+    overflow: hidden;
+    margin-bottom: 10px;
+} */
+.imageeee {
+    width: 10vmax;
+    border-radius: 0%;
+    border: 1px solid var(--themeColor);
+    /* padding: 50px; */
+}
+
+/* .courseForm textarea{
+    padding: -2px 2px 0px 5px;
+}
+.courseForm select.selectOpt{
+    width: 100%;
+    box-shadow: var(--boxShadow);
+    outline: none;
+    text-shadow: none;
+    border: none;
+    padding: 10px 2px 10px 5px;
+    font-size: 14px;
+    color: var(--themeColor);
+    overflow: hidden;
+    margin-bottom: 10px;
+} */
+
+.dashboard_sidebar .dList ul li{
+    overflow: hidden;
+}
+.dashboard_sidebar .dList ul li ul.child_bar{
+    display: block;
+}
+.dashboard_sidebar .dList ul li ul.child_bar li a{
+    display: block;
+    font-size: 12px;
+    padding: 5px 0 5px 30px;
+    background: var(--whiteColor);
+    color: var(--themeColor);
+}
+.dashboard_sidebar .dList ul li ul.child_bar li a:focus,
+.dashboard_sidebar .dList ul li ul.child_bar li a:hover{
+    background: var(--themeColor);
+    color: var(--whiteColor);
+}
+.dashboard_sidebar .dList ul li.toggleBar ul.child_bar{
+    display: none;
+}
+
+.courseActionHolder{
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+}
+.actionHolder{
+    width: 100%;
+    padding: 50px;
+    display: inline-block;
+}
+.actionHolder h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--themeColor);
+}
+.courses_holder{
+    overflow: hidden;
+    padding: 20px;
+    display: inline-block;
+    width: 33.33%;
+}
+.course_card{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+    display: flex;
+    height: 200px;
+}
+.cr_img{
+    flex: 1;
+    width: 30%;
+    overflow: hidden;
+}
+.crs_content{
+    padding: 0px 5px 5px 10px;
+    flex: 2;
+    width: 70%;
+    position: relative;
+}
+.cr_img img{
+    display: block;
+    object-fit: cover;
+}
+.crs_title h2{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.crs_desp p{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    max-height: 100px;
+    overflow: auto;
+}
+.crs_action{
+    position: absolute;
+    bottom: 0;
+    left: auto;
+}
+.crs_action button.btn_primary,
+.crs_action a.btn_primary{
+    padding: 1px 6px;
+    margin-right: 10px;
+    border-radius: 0px;
+    float: left;
+}
+.crs_action button.btn_primary{
+    padding: 1px 6px;
+}
+div.css-r11z79-MuiDataGrid-root{
+    border: 1px solid var(--lightBorder);
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    margin-bottom: 50px;
+    margin-right: 20px;
+    background: var(--whiteColor);
+}
+.dashboard_holder .css-1g86id8-MuiTreeItem-content .MuiTreeItem-iconContainer{
+    width: auto !important;
+}
+/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+    
+    .dSidebar {
+        width: 30%;
+        float: left;
+    }
+    .dashboard_content {
+        width: 75%;
+        float: right;
+        padding: 10px;
+    }
+    .dashboardContent_holder {
+        display: block;
+    }
+    .dashboardContent_holder .dasCard {
+        width: 100%;
+        display: block;
+        margin: 0 0 20px  0;
+        flex: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .courses_holder {
+        overflow: hidden;
+        padding: 10px;
+        display: inline-block;
+        width: 50%;
+    }
+    .dashboard_content h1 {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .dashboard_content {
+        width: 100%;
+        float: none;
+        padding: 0px 20px;
+        margin: 0 0 20px 0;
+    }
+    div.css-r11z79-MuiDataGrid-root{
+        margin-right: 0px;
+    }
+    .courses_content h1 {
+        color: var(--themeColor);
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .courses_holder {
+        padding: 10px;
+        width: 100%;
+    }
+}

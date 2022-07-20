@@ -1,0 +1,176 @@
+
+.course_cart{
+    padding: 50px 50px;
+    text-align: center;
+    overflow: hidden;
+}
+/* .cart{
+    padding: 100px 50px;
+} */
+.cart h1{
+    padding: 20px 0px;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--themeColor);
+    margin-bottom: 30px;
+}
+.emptyCart svg{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    color: var(--redColor);
+}
+.emptyCart p{
+    margin-bottom: 20px;
+    color: var(--lightColor);
+    font-weight: 700;
+}
+.cart_allCourses{
+    width: 70%;
+    float: left;
+    border-top: 1px solid var(--lightColor);
+}
+.cart_holder {
+    overflow: hidden;
+}
+.cart_courses{
+    display: flex;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--greenColor);
+}
+.cart_crs_img{
+    flex: 1;
+    /* max-height: 100px; */
+}
+.cart_crs{
+    flex: 8;
+    padding: 0 20px;
+}
+.cart_crs_content{
+    display: flex;
+}
+.cart_crs_title{
+    flex: 3;
+    flex-flow: column-reverse;
+    text-align: left;
+    text-transform: capitalize;
+}
+.cart_remove_btn{
+    flex: 1;
+    cursor: pointer;
+}
+.cart_remove_btn:hover svg{
+    fill: var(--redColor);
+}
+.cart_crs_price{
+    flex: 1;
+}
+.cart_checkout{
+    width: 30%;
+    float: left;
+    border-top: 1px solid var(--lightColor);
+    border-left: 1px solid var(--greenColor);
+    padding: 10px;
+}
+.cart_checkout span.crs_total{
+    display: block;
+    color: var(--lightColor);
+    font-size: 1rem;
+    text-align: left;
+}
+.cart_checkout span.currency{
+    font-size: 2rem;
+    text-align: left;
+    color: var(--greenColor);
+}
+.cart_checkout span.checkout_price{
+    color: #000;
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-align: left;
+}
+span.checkout_price span{
+    display: inline-block;
+}
+.cart_checkout button.btn_primary{
+    padding: 10px 30px;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+}/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+    .course_cart {
+        padding: 20px 10px;
+    }
+    .cart h1 {
+        padding: 10px 0px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .cart_crs_title{
+        font-size: 16px;
+        flex: 2 1;
+    }
+    .cart_crs {
+        padding: 0 10px;
+    }
+    .cart_courses {
+        padding: 10px;
+    }
+    .cart_checkout span.checkout_price{
+        font-size: 2rem;
+    }
+    .cart_checkout button.btn_primary {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .css-ahj2mt-MuiTypography-root{
+        font-size: 12px !important;
+        font-weight: 700 !important;
+    }
+    .chkOutSteps .css-i4bv87-MuiSvgIcon-root{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .cart_allCourses {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .cart_checkout {
+        width: 100%;
+        float: none;
+        border-top: 1px solid var(--lightBorder);
+        border-right: 1px solid var(--lightBorder);
+        border-bottom: 1px solid var(--lightBorder);
+        border-left: 1px solid var(--lightBorder);
+    }
+    .cart_checkout span.crs_total {
+        font-size: 1rem;
+        text-align: left;
+        float: left;
+        padding-top: 10px;
+    }
+    .cart_checkout span.checkout_price {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-align: right;
+        float: right;
+    }
+    .cart_crs_title {
+        font-size: 12px;
+        flex: 4 1;
+    }
+    .cart_crs_price{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,103 @@
+.services_holder {
+    padding: 100px 50px;
+    overflow: hidden;
+}
+
+.service_cards {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; */
+    padding: 50px 20px;
+    list-style-type: none;
+}
+
+.srvc_card {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    /* border-radius: calc(var(--curve) * 1px); */
+    overflow: hidden;
+    text-decoration: none;
+    width: calc(33.33% - 10px);
+    margin: 0 5px 5px 5px;
+    box-shadow: var(--boxShadow);
+    max-height: 200px;
+}
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* border-radius: calc(var(--curve) * 1px); */
+    background-color: var(--whiteColor);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+    box-shadow: var(--boxShadow);
+}
+
+.srvc_card:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 5px 20px;
+    /* border-radius: calc(var(--curve) * 1px) 0 0 0; */
+    background-color: var(--whiteColor);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.srvc_card:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: var(--redColor);
+}
+
+.card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: var(--themeColor);
+}
+
+/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+    .service_cards {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .card__title {
+        font-size: 12px;
+    }
+    .card__description{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .srvc_card{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}

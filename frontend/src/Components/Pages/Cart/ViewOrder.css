@@ -1,0 +1,29 @@
+.viewOrders{
+    padding: 50px;
+    overflow: hidden;
+}
+.viewOrders h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--themeColor);
+    margin-bottom: 30px;
+}
+.viewOrders .cart_holder{
+    width: 100%;
+    float: none;
+    border-top: 1px solid var(--lightColor);
+}
+.viewOrders .cart_holder .cart_courses:first-child{
+    border-top: 1px solid transparent;
+}
+.viewOrders .cart_holder .cart_courses{
+    border-top: 1px solid var(--greenColor);
+}
+.viewOrders .cart_holder .cart_courses .cart_crs a.status_link{
+    color: var(--greenColor);
+    font-weight: 700;
+}
+.viewOrders .cart_holder .cart_courses .cart_crs a.status_link:focus,
+.viewOrders .cart_holder .cart_courses .cart_crs a.status_link:hover{
+    color: var(--redColor);
+}

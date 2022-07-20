@@ -1,0 +1,81 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  border-right: 1px solid var(--lightBorder);
+  margin-right: 20px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: var(--themeColor);
+  padding: 10px 0px 10px 0px;
+}
+.sidebar ul.sideBar_list{
+  text-decoration: none;
+  color: var(--themeColor);
+}
+/* .sidebar ul.sideBar_list li{
+  padding: 10px 0px 10px 0px;
+} */
+.sidebar ul.sideBar_list li:focus  > div,
+.sidebar ul.sideBar_list li:hover > div {
+  color: var(--whiteColor);
+  background-color: var(--themeColor) ;
+  background: var(--themeColor) ;
+}
+ul.css-g0jugy-MuiCollapse-root-MuiTreeItem-group{
+  margin: 0px;
+}
+/* .sidebar ul.sideBar_list:hover div.MuiTreeItem-iconContainer{
+  color: var(--whiteColor);
+}
+.sidebar ul.sideBar_list:hover div.MuiTreeItem-label{
+  color: var(--whiteColor);
+  background-color: var(--themeColor) ;
+  background: var(--themeColor) ;
+} */
+.sidebar a:focus,
+.sidebar a ul li div.MuiTreeItem-label:focus,
+.sidebar a ul li div.MuiTreeItem-label:hover,
+.sidebar a:hover {
+  color: var(--whiteColor);
+  background-color: var(--themeColor) !important;
+  background: var(--themeColor) !important;
+}
+.sidebar .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label{
+  background-color: var(--themeColor);
+}
+.sidebar a:focus .sidebar .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label,
+.sidebar a:hover .sidebar .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label{
+  background-color: var(--themeColor);
+  color: #fff;
+}
+.sidebar a:hover div.MuiTreeItem-content{
+  background-color: var(--themeColor);
+  color: #fff;
+}
+.sidebar a:focus svg.MuiSvgIcon-root,
+.sidebar a:hover svg.MuiSvgIcon-root{
+  fill: #fff;
+}
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.sidebar .css-1g86id8-MuiTreeItem-content{
+  padding: 10px 0px 10px 10px;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  .sidebar > a > img {
+    width: 40%;
+    margin-left: 200px;
+    transition: all 0.5s;
+  }
+  .sidebar > a {
+    margin: auto;
+  }
+}

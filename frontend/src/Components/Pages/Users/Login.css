@@ -1,0 +1,122 @@
+.formHolder{
+    padding: 50px;
+    background: rgba(0, 46, 59, 0.2);
+}
+.loginImg{
+    flex: 1;
+    position: relative;
+}
+/* .loginImg img{
+    filter: brightness(2) contrast(0.5);
+} */
+.loginImg::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.loginHolder{
+    flex: 1;
+    /* background: var(--whiteColor); */
+    background: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+}
+.loginHolder h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.formHolder div.grid{
+    box-shadow: var(--boxShadow);
+    display: flex;
+}
+.loginForm  a.acc_link{
+    color: var(--themeColor);
+    font-size: 12px;
+    float: right;
+    margin-bottom: 10px;
+}
+.loginForm a.acc_link:focus,
+.loginForm a.acc_link:hover{
+    color: var(--redColor);
+}
+.group_field button:nth-child(1){
+    margin-bottom: 20px;
+}
+.group_field a:nth-child(3){
+    margin-right: 20px;
+}
+.loginForm .group_field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.group_field{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+.group_field label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    color: var(--lightColor);
+}
+.group_field label span{
+    color: red;
+}
+.group_field input {
+  width: 100%;
+  /* border: 1px solid transparent; */
+  box-shadow: var(--boxShadow);
+  outline: none;
+  text-shadow: none;
+  border: none;
+  padding: 5px 2px 5px 5px;
+  /* border-bottom-color: var(--lightColor); */
+  font-size: 12px;
+  color: var(--themeColor);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.group_field input:focus,
+.group_field input:hover {
+  background: #eee;
+  /* box-shadow: 0px 5px 5px -5px rgba(0, 46, 59, 1); */
+  box-shadow: 0px 3px 6px 1px rgba(0, 46, 59, 1);
+  /* border-bottom: 1px solid var(--themeColor); */
+}/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+}
+@media screen and (max-width: 599px) {
+    .formHolder {
+        padding: 20px 0px;
+    }
+    .loginHolder {
+        flex: 2 1;
+        padding: 20px;
+    }
+    .loginHolder h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .loginForm a.acc_link {
+        color: var(--themeColor);
+        font-size: 10px;
+        float: left;
+        margin-bottom: 5px;
+    }
+    .group_field button:nth-child(1) {
+        margin-bottom: 10px;
+        float: right;
+    }
+    .group_field a:nth-child(3) {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,215 @@
+.contactUs{
+    padding: 50px 50px;
+}
+.contactUs h2{
+    padding: 50px 10px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--themeColor);
+}
+.contactUs_holder{
+    display: flex;
+}
+.ourMap {
+    flex: 2 1;
+    overflow: hidden;
+    height: 250px;
+    margin: 0 50px 0 0;
+}
+.mobileMap.ourMap{
+    display: none;
+}
+.contactUs_form{
+    flex: 4;
+}
+.contactUs_form form textarea,
+.contactUs_form form input{
+    outline: none;
+    text-shadow: none;
+    box-shadow: var(--boxShadow);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    color: var(--redColor);
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+}
+.contactUs_form form input:nth-child(3),
+.contactUs_form form input:nth-child(1){
+    margin-right: 10px;
+    width: calc(50% - 10px);
+}
+.contactUs_form form textarea{
+    display: block;
+    width: 100%;
+}
+.contactUs_form form textarea:focus,
+.contactUs_form form input:focus{
+    border-color: var(--themeColor);
+}
+.contact_boxes{
+    display: block;
+    overflow: hidden;
+}
+.ct_box{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    overflow: hidden;
+}
+.ct_icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: var(--greenColor);
+    text-align: center;
+    margin-right: 10px;
+    float: left;
+}
+.ct_icon svg{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    fill: var(--whiteColor);
+    font-size: 2rem;
+}
+.ct_box:hover .ct_icon{
+    background: var(--redColor);
+}
+.ct_icon:hover svg{
+    fill: var(--whiteColor);
+}
+.ct_text{
+    padding: 0;
+    float: left;
+    width: 70%;
+}
+.ct_text h3{
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--redColor);
+    margin-bottom: 10px;
+}
+.ct_text address{
+    display: inline-block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--themeColor);
+}
+.ct_text a{
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--themeColor);
+}
+.ct_text a:focus,
+.ct_text a:hover{
+    color: var(--redColor);
+}
+/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+    .ct_text a.ct_title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .ct_text p {
+        font-size: 11px;
+        line-height: 12px;
+    }
+    .ct_icon {
+        width: 50px;
+        height: 50px;
+    }
+    .ct_text {
+        padding: 0px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .ct_icon {
+        width: 30px;
+        height: 30px;
+    }
+    .ct_icon svg{
+        font-size: 1rem;
+    }
+    .ct_text{
+        padding: 0px;
+    }
+    .ct_text a.ct_title {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .ct_text p {
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .ct_text h3 {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 0px;
+    }
+    .ct_text a,
+    .ct_text address {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .contactUs h2 {
+        padding: 20px 10px;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .ourMap {
+        height: 170px;
+        margin: 0 20px 0 0;
+    }
+    .contactUs_form form textarea,
+    .contactUs_form form input {
+        margin-bottom: 10px;
+        padding: 5px 5px;
+    }
+    .contactUs {
+        padding: 20px 0px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .ct_icon {
+      margin: 0 auto;
+      float: none;
+      margin-bottom: 5px;
+    }
+    .ct_text{
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    .ct_text a.ct_title {
+        font-size: 11px;
+        line-height: 11px;
+        margin-bottom: 5px;
+    }   
+    .contactUs_holder {
+        display: block;
+    }
+    .ourMap {
+        flex: none;
+    }
+    .contactUs_form {
+        flex: none;
+        margin-bottom: 20px;
+    }
+    .ourMap{
+        display: none;
+    }
+    .mobileMap.ourMap{
+        display: block;
+    }
+}

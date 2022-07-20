@@ -1,0 +1,62 @@
+.updateProfileContainer {
+  display: block;
+  text-align: center;
+  padding: 50px 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.updateProfileHeading {
+  text-align: center;
+  color: rgba(0, 0, 0);
+  font: 400 1.3vmax "Roboto";
+  padding: 1.3vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 50%;
+  margin: auto;
+}
+
+.group_field > label > img {
+  width: 4vmax;
+}
+/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+}
+@media screen and (max-width: 599px) {
+  .updateProfileContainer {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  .dSidebar {
+    width: 100%;
+    float: none;
+  }
+  .sidebar{
+    margin-right: 0px;
+  }
+  .sidebar > a {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    border-bottom: 1px solid var(--lightBorder);
+  }
+  .sidebar a > p{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .sidebar a > p svg{
+    font-size: 10px;
+  }
+  .sidebar .css-1g86id8-MuiTreeItem-content {
+    padding: 5px;
+    border-bottom: 1px solid var(--lightBorder);
+  }
+  .css-1g86id8-MuiTreeItem-content .MuiTreeItem-label{
+    font-size: 12px !important;
+  }
+  .css-1g86id8-MuiTreeItem-content .MuiTreeItem-iconContainer svg{
+    font-size: 10px !important;
+  }
+}

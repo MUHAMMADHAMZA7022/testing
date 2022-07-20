@@ -1,0 +1,351 @@
+/* .eventsDetails{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+} */
+.evn_banner{
+    height: 200px;
+}
+.evn_banner img{
+    display: block;
+}
+
+.evn_banner{
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+.evn_banner::after{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+.evn_bannerImg img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.evnBanner_content{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: auto;
+    color: #fff;
+    z-index: 1;
+    top: auto;
+}
+.evnBanner_content h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    position: relative;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.evnBanner_content h2::before{
+    position: absolute;
+    content: ' ';
+    bottom: -3px;
+    left: 0;
+    width: 20%;
+    background: var(--greenColor);
+    height: 3px;
+}
+.evnDetailsContent{
+    padding: 50px 25px;
+}
+.event_img{
+    margin: 0 auto;
+    height: 300px;
+    overflow: hidden;
+}
+.event_img img{
+    display: block;
+}
+.evnDetail_title{
+    padding: 20px 0px 20px 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.evnDetail_title h2{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--redColor);
+}
+.evnDetail_desp{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.evnDetail_desp p{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--lightColor);
+}
+.evn_time{
+    padding: 20px 0px 20px 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.evn_time h2{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--redColor);
+    margin-bottom: 20px;
+}
+.evn_time span{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    color: var(--themeColor);
+}
+.evn_time span svg{
+    margin-right: 5px;
+    font-size: 13px;
+    fill: var(--lightColor);
+}
+.evnDetail_action h2{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--greenColor);
+    margin-bottom: 10px;
+}
+.evnDetail_action span{
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    background: var(--greenColor);
+    font-size: 12px;
+    color: var(--whiteColor);
+    margin-right: 20px;
+    cursor: not-allowed;
+}
+.evnDetail_action span svg{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.evnDetail_action a{
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    background: var(--redColor);
+    font-size: 12px;
+    color: var(--whiteColor);
+}
+.evnDetail_action a svg{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.evnDetail_action{
+    position: relative;
+    margin-bottom: 20px;
+}
+.eventJoin_holder{
+    padding: 20px;
+    width: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    right: 0;
+    background: var(--whiteColor);
+    box-shadow: var(--boxShadow);
+    display: block;
+}
+.eventJoin_holder:hover{
+    box-shadow: var(--hoverBoxShadow);
+}
+.evnDetail_action div.evn_box .eventJoin_holder{
+    /* transform: translateX(-150%); */
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.evnDetail_action div .eventJoin_holder{
+    /* transform: scale(1);
+    visibility: visible;
+    opacity: 1; */
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+}
+.eventJoin_holder > div{
+    display: flex;
+}
+.eventJoin_holder > div p{
+    font-size: 12px;
+    color: var(--redColor);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+    flex: 9;
+    padding: 10px 10px 0px 0px;
+}
+.eventJoin_holder > div button{
+    flex: 1;
+    outline: none;
+    border-radius: 0px;
+    border: 0px;
+    background-color: var(--whiteColor);
+    display: inline-block;
+}
+.eventJoin_holder > div button svg{
+    padding: 2px;
+    box-shadow: var(--boxShadow);
+    fill: var(--redColor);
+}
+.eventJoin_holder > div button svg:focus,
+.eventJoin_holder > div button svg:hover{
+    background-color: var(--redColor);
+    fill: var(--whiteColor);
+    box-shadow: var(--hoverBoxShadow);
+}
+.eventJoin_form {
+    background: var(--whiteColor);
+}
+.eventJoin_form textarea,
+.eventJoin_form input{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--boxBorder);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.eventJoin_form button:hover{
+    background: var(--themeColor);
+    color: var(--whiteColor);
+}
+.eventJoined{
+    padding: 20px;
+    box-shadow: var(--boxShadow);
+}
+.eventJoined h1{
+    color: var(--greenColor);
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.eventJoined table.eventJoinedTable{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--themeColor);
+    border-radius: 2px;
+}
+.eventJoined table.eventJoinedTable tr{
+    display: flex;
+    border-bottom: 1px solid var(--themeColor);
+}
+.eventJoined table.eventJoinedTable tr:last-child{
+    border-bottom: 0px;
+}
+.eventJoined table.eventJoinedTable tr th{
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    border: 0px;
+    border-bottom: 0px;
+    border-right: 1px solid var(--themeColor);
+    color: var(--redColor);
+    font-weight: 900;
+}
+.eventJoined table.eventJoinedTable tr th:last-child{
+    border: 0px;
+}
+.eventJoined table.eventJoinedTable tr td{
+    flex: 1;
+    padding: 10px;
+    /* border: 1px solid var(--themeColor); */
+    border-bottom: 0px;
+    border: 0px;
+    border-right: 1px solid var(--themeColor);
+}
+.eventJoined table.eventJoinedTable tr td:last-child{
+    border: 0px;
+}
+
+
+/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+    .evnDetail_title {
+        padding: 10px 0px 10px 0;
+        margin-bottom: 0;
+    }
+    .evnDetail_title h2 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .evnDetail_desp {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .evnDetail_desp p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .evn_time {
+        padding: 10px 0px 0px 0;
+        margin-bottom: 10px;
+    }
+    .evn_time h2 {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+    .evn_time span {
+        font-size: 10px;
+        line-height: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+    .evn_time span svg {
+        margin-right: 3px;
+        font-size: 10px;
+    }
+    .eventJoin_holder {
+        width: 90%;
+        padding: 10px;
+        left: 5%;
+    }
+}
+@media screen and (max-width: 599px) {
+    .evn_banner {
+        height: 150px;
+    }
+    .evnBanner_content h2 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .evnDetailsContent {
+        padding: 20px 0px;
+    }
+    .event_img {
+        height: 150px;
+    }
+    .evnDetail_title h2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .evn_time h2 {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 0;
+    }
+    .evnDetail_action h2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

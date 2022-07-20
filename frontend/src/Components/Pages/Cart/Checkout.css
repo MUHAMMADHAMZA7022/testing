@@ -1,0 +1,120 @@
+.checkout{
+    padding: 50px 50px;
+}
+.checkout h1{
+    padding: 20px 0px;
+    font-size: 3rem;
+    line-height: normal;
+    color: var(--themeColor);
+    margin-bottom: 30px;
+}
+.checkout_holder{
+    display: flex;
+}
+.checkout_summary h1{
+    padding: 20px 0px;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--themeColor);
+    margin-bottom: 30px;
+}
+.stdInfo{
+    flex: 1;
+    padding: 0px 20px;
+}
+.checkout_summary{
+    flex: 1;
+    padding: 0px 20px;
+}
+
+.stdInfo p{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--redColor);
+    margin-bottom: 5px;
+}
+.stdInfo_form div.lastField{
+    margin-bottom: 30px;
+}
+.checkout_summary_holder{
+    width: 100%;
+}
+.chk_bar{
+    overflow: hidden;
+    border-bottom: 1px solid var(--lightColor);
+    padding: 10px 0px 20px 0px;
+    margin-bottom: 30px;
+}
+.chk_bar span{
+    color: var(--lightColor);
+    display: inline-block;
+}
+.chk_bar span.chk_prc{
+    float: right;
+}
+.checkout_summary_holder button.btn_primary,
+.stdInfo_form button.btn_primary{
+    width: 100%;
+    display: block;
+    padding: 10px 25px ;
+}
+.chk_bar span.chk_currency{
+    float: right ;
+    color: var(--greenColor);
+    font-size: 12px;
+}
+.stdForm_holder{
+    display: flex;
+}
+.chk_formHolder{
+    flex: 2;
+    padding: 10px;
+    margin-right: 20px;
+}
+.checkout_summary{
+    flex: 1;
+    box-shadow: var(--boxShadow);
+}/* Media Queries for responsive site layout */
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 999px) {
+    .checkout {
+        padding: 20px;
+    }
+    .checkout h1 {
+        padding: 10px 0px;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .chk_formHolder {
+        margin-right: 10px;
+    }
+    .checkout_summary {
+        flex: 1 1;
+        padding: 0px 10px;
+        margin-bottom: 30px;
+    }
+    .checkout_summary_holder button.btn_primary,
+    .stdInfo_form button.btn_primary {
+        padding: 5px 15px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .checkout h1 {
+        padding: 10px 0px;
+        font-size: 1rem;
+    }
+    .stdForm_holder {
+        display: block;
+    }
+    .chk_formHolder {
+        flex: none;
+        padding: 10px;
+    }
+    .checkout_summary {
+        flex: none;
+        padding: 0px 10px 20px 10px;
+        margin-bottom: 20px;
+    }
+}
