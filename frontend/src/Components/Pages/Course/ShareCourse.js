@@ -8,7 +8,7 @@ function ShareCourse() {
         <Fragment>
             <RWebShare
                 data={{
-                    url: `http://localhost:3000/course/details/${course._id}`,
+                    url: `http://sctc-mern-stack.herokuapp.com/course/details/${course._id}`,
                     title: "SCTC",
                 }}
                 onClick={() => console.log("Shared Successfully!")}
